@@ -22,7 +22,7 @@ function insert(post) {
 return db('posts')
     .insert(post)
     .then(ids => {
-      return getById(ids[0]);
+    return getById(ids[0]);
     });
 }
 
